@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>My Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Ibrahim Ibrahim</h1><br />
+						
+						<p>Ibrahim Ibrahim is a Machine Learning Expert and  Data Scientist with a background in Engineering.<br/>
+							He currently leads a team of Data Scientists and Machine Learning Engineers in building data solutions.<br/>
+							His current projects involve working with LLMs, and he has developed a keen interest in analyzing sports data.<br/>
+							You can find some of his Completed projects here.</p>
+						</p>
+						<h2>Check out his Portfolio</h2>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">MEET IBRAHIM</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="llms.html">LLMS And Transformers</a></li>
+							<li><a href="deep learning.html">Deep Learning</a></li>
+							<li><a href="trad ml.html">Traditional ML</a></li>
+							<li><a href="data analysis.html">Data Analysis</a></li>
+							<li><a href="sports analysis.html">Sports Analysis</a></li>
+							
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/ibrahimibrahim9291894" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="#" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									
+									<h3><a href="#">Currently Working on:<br />
+										Plot Based Movie Reccomendations<br />
+										Using LLMS ANd Vector Databases</a></h3>
+									<p>In this project, I intend to set up a Retrieval-Augmented Generation (RAG) system powered by a Chroma vector database and a Large Language Model (LLM). 
+										Text embeddings were created from the plot descriptions of the IMDb dataset using sentence transformers from Hugging Face. 
+										These embeddings were then loaded into a Chroma vector store. 
+										Together with the LLM, they formed the RAG system for generating a curated binge-watching movie set.<br /></p>
+								</header>
+								<a href="#" class="image fit"><img src="images/flame-vr-movie.png" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="https://docs.google.com/presentation/d/1aXNuMCkiKLNfYtx50ZQOoqf02DL6RZhefzZ4A8pUUD4/edit?usp=sharing" class="button large",  target="_blank">Check Out My Progress: 50% Complete</a></li>
+									
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date">April 18, 2017</span>
+										<h2><a href="#">Creating a Song Similarity Index:Setting up a Vector Database From The 5 Miliion Song Lyrics Dataset Using Chroma, Langchain And GTE-large Model <br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/sunday-sheet-music-notes.png" alt="" /></a>
+									<p>
+										In this project, I undertake several steps to develop an efficient system for recommending songs based on lyrical content. First, I load the lyrics of over 5 million songs. Then, I use transformers to chunk and encode the lyrics. Afterward, I set up vector databases to store the encoded lyrics. Finally, I retrieve similar songs based on lyrics similarity using cosine similarity. By leveraging these techniques, I aim to provide accurate and meaningful song recommendations based on the content of the lyrics.
+										To achieve this, I utilized several libraries: LangChain and LangChain Community for loading the data and chunking the lyrics, the GTE-large sentence transformers model for encoding, and Chroma for setting up vector databases.
+									</p>
+									<ul class="actions special">
+										<li><a href="https://docs.google.com/presentation/d/1yMDoNTht00glnz5dPA7zQ3nAB3DXYjEnVGM_tNW6f4I/edit?usp=sharing" class="button" target="_blank">ABSTRACT</a></li>
+										<li><a href="https://www.kaggle.com/code/ibrahimchristopher/llm-lyrics-based-song-reccomendation" class="button"  target="_blank">Full Code</a></li>
+										<li><a href="https://drive.google.com/drive/folders/1iYfh7pegsea6XGDGljwa0QyxZEk258ys?usp=sharing" class="button" target="_blank">Demo Here</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 14, 2017</span>
+										<h2><a href="#">Creating a Movie Similarity Index:Setting up a Vector Database From The IMDB Dataset Using Chroma, Langchain And Sentence Transformers<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/journal-woman-watching-movies-on-online-streaming-platform.png" alt="" /></a>
+									<p>
+										In this project, I undertake several steps to develop an efficient system for recommending movies based on the plot description. First, I load the IMDb movie dataset containing over 10,000 movie plots. Unlike previous projects, no chunking of the data is required. Instead, I use the all-mpnet-base-v2 model for encoding the plots. After encoding, I set up vector databases to store the encoded plots. I would later go on to migrate the entire local chroma Database to a pinecone cloud vector database. Finally, I retrieve similar movies based on plot similarity using cosine similarity. By leveraging these techniques, I aim to provide accurate and meaningful movie recommendations based on the content of the plots.
+										To achieve this, I utilized several libraries: LangChain and LangChain Community for loading the data, the all-mpnet-base-v2 model for encoding, Chroma and Pinecone for setting up vector databases.
+									</p>
+									<ul class="actions special">
+										<li><a href="https://docs.google.com/presentation/d/1aXNuMCkiKLNfYtx50ZQOoqf02DL6RZhefzZ4A8pUUD4/edit?usp=sharing" class="button" target="_blank">ABSTRACT</a></li>
+										<li><a href="https://www.kaggle.com/code/ibrahimchristopher/llm-plot-encoded-based-movie-recommendation-engine" class="button" target="_blank">Full Code</a></li>
+										<li><a href="https://plot-based-rec.streamlit.app/" class="button" target="_blank">Demo Here</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 11, 2017</span>
+										<h2><a href="#">Transcribing Sports Events And Videos Using FFMPEG and Open AI Whiper Models<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/sports.jpg" alt="" /></a>
+									<p>In this project, I utilized several key libraries to download the 2023 FA cup Final video from youtube, extract the audio, and transcribe the extracted audio. The libraries employed include:
+										yt_dlp, ffmpeg and OpenAI.
+										By integrating these tools, we aim to efficiently process and convert a sport event video content into textual format for LLM analysis.</p>
+									<ul class="actions special">
+										<li><a href="https://docs.google.com/presentation/d/1p69l2p60iFm0yE9cc4t-P-UqMFiIjXd1mZ4ebKHXnmk/edit?usp=sharing" class="button", target="_blank">ABSTRACT</a></li>
+										<li><a href="https://www.kaggle.com/code/ibrahimchristopher/video-to-text-transcript-using-openai-whisper" class="button", target="_blank">Full Code</a></li>
+										<li><a href="https://www.kaggle.com/code/ibrahimchristopher/video-to-text-transcript-using-openai-whisper" class="button",  target="_blank">Demo Here</a></li>
+									</ul>
+								</article>
+								
+							</section>
+
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Lagos<br />
+								Nigeria</p>
+							</section>
+							
+							<section>
+								<h3>Email</h3>
+								<p><a href="">ibrahimchristopher97@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="#" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
